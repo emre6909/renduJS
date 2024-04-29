@@ -49,10 +49,9 @@
       console.log(data.entreprise.temoignages);
         data.entreprise.temoignages.forEach(index => {
        const ListItemss = document.createElement(`H3`);
-       ListItemss.textContent = index.prénom;
-       console.log(ListItemss);
+       ListItemss.textContent = index.prenom;
        const descriptions = document.createElement(`p`);
-       descriptions.textContent = index.TypeExperience;
+       descriptions.textContent = index.typeExperience;
        const commentaires = document.createElement(`p`);
        commentaires.textContent =  `${index.commentaire}-${index.img}`;   
        document.body.appendChild(commentaires);
