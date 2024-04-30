@@ -2,19 +2,20 @@
     fetch(`escapeGame.json`)
         .then(response => response.json())
         .then(data => {
+            const main = document.querySelector("main");
              const elements = document.createElement('H1');
              elements.textContent = `${data.entreprise.nomCommercial}`;
-             document.body.appendChild(elements)
+             main.appendChild(elements)
              console.log(data.entreprise.nomCommercial);
 
              const bouton = document.createElement(`H2`)
              bouton.textContent = `${data.entreprise.phraseAccroche}`;
-             document.body.appendChild(bouton)
+             main.appendChild(bouton);
              console.log(data.entreprise.phraseAccroche);
 
              const contenu = document.createElement('button');
              contenu.textContent = `${data.entreprise.texteAppelAction} `;
-             document.body.appendChild(contenu)
+             main.appendChild(contenu)
              console.log(data.entreprise.texteAppelAction)
 
             
@@ -24,7 +25,7 @@
              
 
              const liste = document.createElement('ul');
-             document.body.appendChild(liste)
+             main.appendChild(liste)
             
                 data.entreprise.avantagesClients.forEach(element => {
                     const listItem = document.createElement('li');
@@ -45,9 +46,9 @@
            ListItemss.textContent = element.img;
            let img = document.createElement("img");
            img.src= element.image;
-           document.body.appendChild(ListItems);
-           document.body.appendChild(description);
-           document.body.appendChild(img);
+           main.appendChild(ListItems);
+           main.appendChild(description);
+           main.appendChild(img);
            
            console.log(ListItems);
            console.log(description);
@@ -68,10 +69,10 @@
            ListItemsss.textContent = index.img;
            let img = document.createElement("img");
            img.src= index.image;
-       document.body.appendChild(ListItemss);
-       document.body.appendChild(descriptions);
-       document.body.appendChild(commentaires);
-       document.body.appendChild(img);
+       main.appendChild(ListItemss);
+       main.appendChild(descriptions);
+       main.appendChild(commentaires);
+       main.appendChild(img);
        console.log(ListItemss);
        console.log(descriptions);
        console.log(commentaires);

@@ -2,3 +2,82 @@ img{
     width: 30%;
     margin-left: 38%;
 }
+.nav{
+    margin-right: 20px;
+}
+.Lien{
+    color: black;
+}
+.nav2{
+    background-color: #cd1ab2;
+    height: 100px;
+}
+H3{
+    text-align: center;
+}
+p{
+    margin-left: 20px;
+}
+H1{
+    text-align: center;
+}
+
+body{
+    background-color: #cd1ab2;
+    height: 100px;
+}
+.nav{
+    margin-right: 20px;
+}
+
+
+
+
+.Lien{
+    color: black;
+}
+.Titre{
+    color: black;
+    text-align: center;  
+    
+}                      
+i{
+    font-size: 50px;
+    display: inline;
+    margin-right: 9px;
+    }
+main {
+    background-color:#059494;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #cd1ab2;
+}
+     
+
+.rouge{
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+
+
+
+
+.formulaire{
+    background-color: #cd1ab2;
+    width: 100%;
+}
+
+  
+   section, ul {
+    --pico-block-spacing-vertical: 0;
+    --pico-typography-spacing-vertical: 0;
+    margin: 0;
+   }
+   body{
+    background-color: #cd1ab2;
+   }
+   
+  
