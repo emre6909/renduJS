@@ -35,10 +35,7 @@
            const ListItems = document.createElement(`H3`);
            const description = document.createElement(`p`);
            description.textContent = element.description;
-           const descriptions = document.createElement(`p`);
-           descriptions.textContent = element.img;
-           const ListItemss = document.createElement(`div`);
-           ListItemss.textContent = element.img;
+           ListItems.textContent = element.nom;
            let img = document.createElement("img");
            img.src= element.image;
            main.appendChild(ListItems);
