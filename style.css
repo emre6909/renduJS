@@ -2,6 +2,9 @@ img{
     width: 30%;
     margin-left: 38%;
 }
+header{
+    padding: 0!important;
+}
 .nav{
     margin-right: 20px;
 }
@@ -49,9 +52,12 @@ i{
 main {
     background-color:#059494;
 }
-footer {
+.bas {
     display: flex;
     justify-content: center;
+    background-color: #cd1ab2;
+}
+footer{
     background-color: #cd1ab2;
 }
      
@@ -76,8 +82,9 @@ footer {
     --pico-typography-spacing-vertical: 0;
     margin: 0;
    }
-   body{
-    background-color: #cd1ab2;
-   }
    
-  
+   #map {
+    height: 400px;
+    width: 800px;
+    margin-left: 200px;
+  }

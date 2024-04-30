@@ -7,6 +7,7 @@
              elements.textContent = `${data.entreprise.nomCommercial}`;
              main.appendChild(elements)
              console.log(data.entreprise.nomCommercial);
+             
 
              const bouton = document.createElement(`H2`)
              bouton.textContent = `${data.entreprise.phraseAccroche}`;
@@ -18,14 +19,9 @@
              main.appendChild(contenu)
              console.log(data.entreprise.texteAppelAction)
 
-            
-             
-             
-
-             
-
              const liste = document.createElement('ul');
-             main.appendChild(liste)
+             main.appendChild(liste);
+             liste.setAttribute("id","activites");
             
                 data.entreprise.avantagesClients.forEach(element => {
                     const listItem = document.createElement('li');
@@ -37,7 +33,6 @@
             console.log(data.entreprise.activites);
             data.entreprise.activites.forEach(element => {
            const ListItems = document.createElement(`H3`);
-           ListItems.textContent = element.nom;
            const description = document.createElement(`p`);
            description.textContent = element.description;
            const descriptions = document.createElement(`p`);
@@ -59,6 +54,7 @@
         data.entreprise.temoignages.forEach(index => {
        const ListItemss = document.createElement(`H3`);
        ListItemss.textContent = index.prenom;
+       ListItemss.setAttribute("id","temoignages");
        const descriptions = document.createElement(`p`);
        descriptions.textContent = index.typeExperience;
        const commentaires = document.createElement(`p`);
@@ -78,6 +74,15 @@
        console.log(commentaires);
        console.log(img);
     })
+    let map = L.map('map').setView([48.866667, 2.333333], 5);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker([48.866667, 2.333333]).addTo(map)
+  .bindPopup('Escape game Paris')
+  .openPopup();
     
 
 
