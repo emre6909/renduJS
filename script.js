@@ -1,5 +1,5 @@
    
-    fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/escape-game.json')
+    fetch(`escapeGame.json`)
         .then(response => response.json())
         .then(data => {
              const elements = document.createElement('H1');
@@ -38,12 +38,20 @@
            const ListItems = document.createElement(`H3`);
            ListItems.textContent = element.nom;
            const description = document.createElement(`p`);
-           description.textContent = `${element.description}-${element.img}`;
+           description.textContent = element.description;
+           const descriptions = document.createElement(`p`);
+           descriptions.textContent = element.img;
+           const ListItemss = document.createElement(`div`);
+           ListItemss.textContent = element.img;
+           let img = document.createElement("img");
+           img.src= element.image;
            document.body.appendChild(ListItems);
            document.body.appendChild(description);
+           document.body.appendChild(img);
+           
            console.log(ListItems);
            console.log(description);
-            
+           console.log(img);
             })
         
       console.log(data.entreprise.temoignages);
@@ -53,15 +61,30 @@
        const descriptions = document.createElement(`p`);
        descriptions.textContent = index.typeExperience;
        const commentaires = document.createElement(`p`);
-       commentaires.textContent =  `${index.commentaire}-${index.img}`;   
-       document.body.appendChild(commentaires);
+       commentaires.textContent =  index.commentaire;   
+       const descriptionss = document.createElement(`p`);
+           descriptionss.textContent = index.img;
+           const ListItemsss = document.createElement(`div`);
+           ListItemsss.textContent = index.img;
+           let img = document.createElement("img");
+           img.src= index.image;
        document.body.appendChild(ListItemss);
        document.body.appendChild(descriptions);
+       document.body.appendChild(commentaires);
+       document.body.appendChild(img);
        console.log(ListItemss);
        console.log(descriptions);
        console.log(commentaires);
+       console.log(img);
     })
+    
+
+
+
+
 });
+
+
 
                 
                 
