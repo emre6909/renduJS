@@ -17,9 +17,12 @@ header{
 }
 H3{
     text-align: center;
+    
+    
 }
 p{
     margin-left: 20px;
+    
 }
 H1{
     text-align: center;
@@ -40,7 +43,7 @@ body{
     color: black;
 }
 .Titre{
-    color: black;
+    color: white;
     text-align: center;  
     
 }                      
@@ -49,8 +52,10 @@ i{
     display: inline;
     margin-right: 9px;
     }
-main {
-    background-color:#059494;
+main  {
+    background-color:black;
+    
+    
 }
 .bas {
     display: flex;
@@ -88,3 +93,22 @@ footer{
     width: 800px;
     margin-left: 200px;
   }
+  main h1{
+    color:white;
+  }
+  main h2{
+    color: white;
+  }
+  main ul{
+    color: white;
+  }
+  main li{
+    color: white;
+  }
+  main h3{
+    color: white;
+  }
+  main p{
+    color: white;
+  }
+  
