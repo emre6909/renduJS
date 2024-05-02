@@ -8,7 +8,7 @@
              main.appendChild(elements)
              console.log(data.entreprise.nomCommercial);
              
-
+            
              const bouton = document.createElement(`H2`)
              bouton.textContent = `${data.entreprise.phraseAccroche}`;
              main.appendChild(bouton);
@@ -68,7 +68,7 @@
            ListItemsss.textContent = index.img;
            let img = document.createElement("img");
            img.src= index.image;
-       
+         
        main.appendChild(ListItemss);
        main.appendChild(descriptions);
        main.appendChild(commentaires);
