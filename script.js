@@ -13,9 +13,14 @@
              bouton.textContent = `${data.entreprise.phraseAccroche}`;
              main.appendChild(bouton);
              console.log(data.entreprise.phraseAccroche);
-
+            const form = document.querySelector('form');
+            form.id= 'contact';
              const contenu = document.createElement('button');
              contenu.textContent = `${data.entreprise.texteAppelAction} `;
+             contenu.addEventListener('click',function (event) {
+              window.location.href='index.html#contact';
+              console.log("test");
+             });
              main.appendChild(contenu)
              console.log(data.entreprise.texteAppelAction)
 
@@ -38,6 +43,7 @@
            ListItems.textContent = element.nom;
            let img = document.createElement("img");
            img.src= element.image;
+           
            main.appendChild(ListItems);
            main.appendChild(description);
            main.appendChild(img);
@@ -62,6 +68,7 @@
            ListItemsss.textContent = index.img;
            let img = document.createElement("img");
            img.src= index.image;
+       
        main.appendChild(ListItemss);
        main.appendChild(descriptions);
        main.appendChild(commentaires);

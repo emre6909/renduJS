@@ -1,18 +1,18 @@
 img{
     width: 30%;
     margin-left: 38%;
+    border-radius: 60%;
 }
+
 header{
-    padding: 0!important;
+    margin-left: 20px;
 }
-.nav{
-    margin-right: 20px;
-}
+
 .Lien{
     color: black;
 }
 .nav2{
-    background-color: #cd1ab2;
+    background-color:#808080;
     height: 100px;
 }
 H3{
@@ -29,11 +29,14 @@ H1{
 }
 
 body{
-    background-color: #cd1ab2;
+    background-color: #808080;
     height: 100px;
 }
 .nav{
     margin-right: 20px;
+    margin-left: 20px;
+    background-color: #808080!important;
+    color: black!important;
 }
 
 
@@ -60,10 +63,10 @@ main  {
 .bas {
     display: flex;
     justify-content: center;
-    background-color: #cd1ab2;
+    background-color:#808080;
 }
 footer{
-    background-color: #cd1ab2;
+    background-color:#808080;
 }
      
 
@@ -77,7 +80,7 @@ footer{
 
 
 .formulaire{
-    background-color: #cd1ab2;
+    background-color: #808080;
     width: 100%;
 }
 
@@ -111,4 +114,11 @@ footer{
   main p{
     color: white;
   }
-  
+  .input{
+    width: 50%!important;
+    margin-left: 26%;
+  }
+  .page{
+    background-color: #808080!important;
+    color: black!important;
+  }
