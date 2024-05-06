@@ -6,6 +6,7 @@ img{
 
 header{
     margin-left: 20px;
+    --pico-block-spacing-vertical: 0px;
 }
 
 .Lien{
@@ -120,5 +121,10 @@ footer{
   }
   .page{
     background-color: #808080!important;
+  }
+  .Lien a {
     color: black!important;
+  }
+  strong{
+    color: black;
   }
